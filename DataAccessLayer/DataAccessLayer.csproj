@@ -41,9 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DirectoryAccessor.cs" />
     <Compile Include="FileAccessor.cs" />
+    <Compile Include="IDirectoryAccessor.cs" />
     <Compile Include="IFileAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObjectLayer\ObjectLayer.csproj">
+      <Project>{916082a3-1238-4f35-8939-bfdd89d381ca}</Project>
+      <Name>ObjectLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
